@@ -7,16 +7,15 @@ body {
   color: #fff;
 }
 
-header {
+.header {
+  position: relative; 
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 3rem;
-  font-family: 'Inter', sans-serif;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  padding: 1rem 2rem;
+  z-index: 999;
 }
 .logo {
   font-family: 'Anta', sans-serif;
@@ -273,4 +272,46 @@ nav a:hover {
   .contact-box .social-icons a:hover {
     color: #00bfff;
   }
-  
+  /* === FOOTER === */
+.footer {
+  background-color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+  border-top: 1px solid #ccc;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.footer-column h3 {
+  font-family: 'Anta', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.footer-column a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #00bfff;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+}
