@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FRAS - Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="FRAS Logo">
+          </a>
+        </div>        
+        <ul class="nav-links">
+          <li><a href="contact.html">Get in Touch</a></li>
+          <li><a href="#" class="btn-signin">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Product Boxes -->
+  <section class="product-boxes">
+    <div class="container">
+      <div class="box-row">
+        <div class="box" onclick="openModal('softwareModal')">
+          <img src="images/placeholder.jpg" alt="Buy Software">
+          <h3>BUY THE SOFTWARE</h3>
+        </div>
+        <div class="box" onclick="openModal('setModal')">
+          <img src="images/tripod.jpg" alt="Buy the Set">
+          <h3>BUY THE SET</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Product -->
+  <section class="info">
+    <div class="container">
+      <p><span class="dot"></span> <strong>OUR GOAL AS A COMPANY</strong></p>
+      <p>
+        FRAS (Facial Recognition Attendance System) aims to <strong>revolutionize attendance tracking in educational institutions and workplaces</strong>. To achieve it, we provide the institutions an <strong>automated, efficient</strong>, and <strong>error-free</strong> solution using facial recognition technology. Our goal is to <strong>eliminate the inefficiencies</strong> of manual attendance-taking, enhance data accuracy, and improve time management and productivity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section class="technology">
+    <div class="container">
+      <h3 class="tech-heading">TECHNOLOGY SPECIFICS</h3>
+      <p><strong>Simple, portable, and efficient.</strong></p>
+      <p>
+        FRAS is designed to be minimal and easy to implement. The main components in any type of service are:
+      </p>
+      <ul>
+        <li>GoPro HERO 12 Black: High-resolution camera to capture clear and precise images.</li>
+        <li>Tripod to ensure stability and an optimal angle for tracking.</li>
+        <li>Flash Disk (USB) containing the software and database, allowing offline and easy installation on any compatible computer.</li>
+      </ul>
+      <img src="images/devices.jpg" alt="Devices" class="tech-image">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-logo">F·R·A·S</div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="contact.html">Email</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Overlays -->
+  <div id="softwareModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('softwareModal')">&times;</span>
+      <h2>Buy the Software</h2>
+      <p>More information coming soon...</p>
+    </div>
+  </div>
+
+  <div id="setModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('setModal')">&times;</span>
+      <h2>Buy the Set</h2>
+      <p>More information coming soon...</p>
+    </div>
+  </div>
+
+  <!-- Modal Script -->
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    // Close modal if clicking outside of modal content
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
