@@ -62,6 +62,31 @@ section, header, footer, main, .container {
   text-transform: uppercase;
 }
 
+/* === LANDING PAGE HEADER TEXT === */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Anta', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* === FOOTER === */
 .footer {
   background-color: white;
@@ -97,17 +122,12 @@ section, header, footer, main, .container {
   transition: color 0.3s ease;
 }
 
-.footer-column a[href="faqs.html"],
-.footer-column a[href="#"] {
-  left: "product.html";
-}
-
 .footer-column a:hover {
   color: #00bfff;
 }
 
 .footer-logo {
-  width: 160px;
+  width: 200px;
   height: auto;
 }
 
@@ -133,6 +153,11 @@ section, header, footer, main, .container {
   .footer-column {
     margin-bottom: 2rem;
     text-align: center;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    padding: 0 1rem;
   }
 }
 
