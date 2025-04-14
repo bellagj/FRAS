@@ -99,7 +99,7 @@ section, header, footer, main, .container {
 
 .footer-column a[href="faqs.html"],
 .footer-column a[href="#"] {
-  href: "product.html";
+  left: "product.html";
 }
 
 .footer-column a:hover {
@@ -254,7 +254,6 @@ section, header, footer, main, .container {
 }
 
 /* === MODAL STYLES === */
-
 .modal {
   display: none;
   position: fixed;
@@ -272,19 +271,32 @@ section, header, footer, main, .container {
   padding: 2rem;
   border-radius: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   position: relative;
   font-family: 'Inter', sans-serif;
+  text-align: center;
 }
 
 .modal-content h2 {
   font-family: 'Anta', sans-serif;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.modal-content p {
-  font-size: 1rem;
+.modal-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   color: #333;
+}
+
+.modal-content ul {
+  text-align: left;
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+.modal-content li {
+  margin-bottom: 0.75rem;
 }
 
 .close {
@@ -299,6 +311,31 @@ section, header, footer, main, .container {
 
 .close:hover {
   color: #000;
+}
+
+/* === PRODUCT MODAL TEXT === */
+#modal1 .modal-content {
+  content: "";
+}
+
+#modal1 .modal-content h2 {
+  content: "Package 1: Full Set (GoPro Hero 12 + tripod + USB with software)";
+}
+
+#modal1 .modal-content h3 {
+  content: "Ideal for customers looking for a ready-to-use solution.";
+}
+
+#modal1 .modal-content ul {
+  list-style-type: disc;
+}
+
+#modal2 .modal-content h2 {
+  content: "Package 2: USB with software";
+}
+
+#modal2 .modal-content h3 {
+  content: "Ideal for customers who already have resources or want to customize the installation.";
 }
 
 /* === CONTACT PAGE === */
