@@ -62,30 +62,43 @@ section, header, footer, main, .container {
   text-transform: uppercase;
 }
 
-/* === LANDING PAGE HEADER TEXT === */
+/* === LANDING HERO TEXT (only for index.html) === */
 .hero-text {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Anta', sans-serif;
-  font-size: 3rem;
   text-align: center;
-  animation: fadeInUp 1s ease-out;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  color: white;
+  width: 90%;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-family: 'Anta', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1.2s ease-out;
+  white-space: nowrap;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  margin-top: 0;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -30%);
   }
   100% {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
 }
+
 
 /* === FOOTER === */
 .footer {
@@ -127,7 +140,7 @@ section, header, footer, main, .container {
 }
 
 .footer-logo {
-  width: 200px;
+  width: 160px;
   height: auto;
 }
 
@@ -155,9 +168,12 @@ section, header, footer, main, .container {
     text-align: center;
   }
 
-  .hero-text {
-    font-size: 2rem;
-    padding: 0 1rem;
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
   }
 }
 
