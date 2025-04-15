@@ -306,6 +306,23 @@ section, header, footer, main, .container {
   background-color: rgba(0,0,0,0.8);
 }
 
+.modal-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+  background-color: #009acd;
+}
+
 .modal-content {
   background-color: #fff;
   margin: 10% auto;
