@@ -482,16 +482,17 @@ section, header, footer, main, .container {
   font-weight: bold;
 }
 
-.contact-box .social-icons {
-  margin: 1rem 0;
-}
-
-.contact-box .social-icons a {
-  margin: 0 1rem;
+.contact-email {
+  font-size: 16px;
+  margin-top: 20px;
   color: #000;
-  transition: color 0.2s ease;
 }
 
-.contact-box .social-icons a:hover {
-  color: #00bfff;
+.contact-email a {
+  color: #00AEEF;
+  text-decoration: none;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
 }
